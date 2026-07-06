@@ -145,24 +145,23 @@ Current tool operations:
 | `uptime_summary` | Read Uptime Kuma status from SQLite |
 | `backup_readiness` | Report whether Restic backup setup is ready |
 
-Example prompts:
+Representative prompts:
 
 ```text
-Use docker_summary and tell me which containers need attention.
+docker_summary: Which containers need attention?
 ```
 
 ```text
-Use backup_readiness and tell me what is missing before backups are safe to run.
+backup_readiness: What is missing before backups are safe to run?
 ```
 
 ```text
-Use security_posture with max_issues=8. Summarize the top findings by severity.
+security_posture(max_issues=8): Top findings by severity.
 ```
 
-## Screenshot Guide
+## Screenshot Evidence
 
-Use these screenshots for a portfolio, README, or presentation. Keep sanitized
-copies under `docs/assets/screenshots/`.
+The public screenshot set highlights the major architecture, operations, identity, and governance surfaces. All images are sanitized for public sharing.
 
 | Screenshot File | What It Shows |
 |---|---|
@@ -181,8 +180,6 @@ copies under `docs/assets/screenshots/`.
 | `authentik-lab-provisioning-groups.png` | Lab-only Authentik groups created by the provisioner |
 | `wikijs-iga-provisioning-runbook.png` | Finished provisioning runbook in Wiki.js |
 | `wikijs-iga-report.png` | Executive-friendly IGA provisioning report |
-
-Screenshots are sanitized for public sharing.
 
 ## Screenshots
 
@@ -299,8 +296,7 @@ Engineering skills demonstrated:
 - The IGA provisioning bridge is intentionally scoped to lab-only users and
   `lab-*` groups; production-style approvals/connectors would be a future
   expansion.
-- Old Taskcafe containers are visible as drift and should be cleaned up or
-  documented.
+- Old Taskcafe containers are tracked as known operational drift from earlier experimentation.
 
 ## Explore More
 

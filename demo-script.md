@@ -21,7 +21,7 @@ provisions dummy lab users/groups into Authentik.
 
 ### 1. Private Entry Point
 
-Open:
+Private route:
 
 ```text
 https://homepage.home.arpa:8443
@@ -48,7 +48,7 @@ Proves:
 
 ### 2. Identity And SSO
 
-Open:
+Private route:
 
 ```text
 https://auth.home.arpa:8443
@@ -75,16 +75,16 @@ Proves:
 
 ### 3. AI Operations Assistant
 
-Open:
+Private route:
 
 ```text
 https://openwebui.home.arpa:8443
 ```
 
-Ask:
+Representative operator prompt:
 
 ```text
-Use docker_summary and tell me which containers need attention.
+docker_summary: Which containers need attention?
 ```
 
 Notes:
@@ -110,7 +110,7 @@ Proves:
 
 ### 4. Monitoring And Logs
 
-Open:
+Private route:
 
 ```text
 https://uptime.home.arpa:8443
@@ -137,7 +137,7 @@ Proves:
 
 ### 5. Documentation Layer
 
-Open:
+Private route:
 
 ```text
 https://wiki.home.arpa:8443
@@ -163,7 +163,7 @@ Proves:
 
 ### 6. IGA Simulation
 
-Open:
+Private route:
 
 ```text
 https://midpoint.home.arpa:8443/midpoint
@@ -195,13 +195,13 @@ Proves:
 
 ### 7. IGA To Authentik Provisioning
 
-Open:
+Private route:
 
 ```text
 https://auth.home.arpa:8443
 ```
 
-Show:
+Relevant views:
 
 ```text
 Directory -> Users
@@ -231,7 +231,7 @@ Proves:
 
 ### 8. IGA Report
 
-Open:
+Private route:
 
 ```text
 https://wiki.home.arpa:8443/runbooks/iga-lab-report
@@ -299,5 +299,5 @@ Proves:
 | Authentication model | Forward-auth is good for browser apps; OIDC is better for mobile/API-heavy apps. |
 | Resource management | It is realistic for IGA demos but too heavy to keep running all the time on 16GB RAM. |
 | Provisioning scope | It only accepts `@home.arpa` emails and `lab-*` groups, refuses privileged-looking names, and never deletes users. |
-| Future expansion | Add approval workflow, backup execution on external SSD, and a production-grade connector pattern. |
+| Future expansion | Potential expansion includes approval workflow, backup execution on external SSD, and a production-grade connector pattern. |
 
