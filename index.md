@@ -32,7 +32,7 @@ Highlights:
 
 ## Architecture
 
-```mermaid
+<div class="mermaid">
 flowchart TB
   user["Tailnet client<br/>Mac / iPhone / browser"]
   dns["AdGuard Home<br/>home.arpa DNS rewrites"]
@@ -76,7 +76,11 @@ flowchart TB
   tools --> power
   tools --> uptime
   tools --> receipts
-```
+</div>
+<script type="module">
+  import mermaid from "https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs";
+  mermaid.initialize({ startOnLoad: true, theme: "dark" });
+</script>
 
 ## Security Model
 
