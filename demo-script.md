@@ -262,21 +262,21 @@ Proves:
 
 | Screenshot | What It Shows |
 |---|---|
-| `homepage-dashboard.png` | Private service launchpad with organized app groups. |
-| `authentik-apps.png` | Centralized SSO and app access policy. |
-| `openwebui-operator.png` | Local AI operator with runbook knowledge. |
-| `openwebui-tool-call.png` | Live read-only infrastructure tool call. |
-| `uptime-kuma-status.png` | Monitoring and availability coverage. |
-| `wikijs-runbooks.png` | Git-backed operational documentation. |
-| `traefik-dashboard.png` | Reverse proxy routing and middleware. |
-| `immich-oidc.png` | App-native OIDC for mobile/API-safe SSO. |
-| `midpoint-users.png` | IGA demo users and lifecycle states. |
-| `midpoint-role-catalog.png` | Business role catalog. |
-| `midpoint-access-review.png` | Access review and SoD evidence. |
-| `authentik-lab-provisioning-users.png` | Dummy users provisioned into Authentik. |
-| `authentik-lab-provisioning-groups.png` | Lab-only Authentik groups. |
-| `wikijs-iga-provisioning-runbook.png` | Finished IGA provisioning runbook. |
-| `wikijs-iga-report.png` | Executive-friendly IGA report. |
+| [Homepage Dashboard](assets/screenshots/homepage-dashboard.png) | Private service launchpad with organized app groups. |
+| [Authentik Apps](assets/screenshots/authentik-apps.png) | Centralized SSO and app access policy. |
+| [Open WebUI Operator](assets/screenshots/openwebui-operator.png) | Local AI operator with runbook knowledge. |
+| [Open WebUI Tool Call](assets/screenshots/openwebui-tool-call.png) | Live read-only infrastructure tool call. |
+| [Uptime Kuma Status](assets/screenshots/uptime-kuma-status.png) | Monitoring and availability coverage. |
+| [Wiki.js Runbooks](assets/screenshots/wikijs-runbooks.png) | Git-backed operational documentation. |
+| [Traefik Dashboard](assets/screenshots/traefik-dashboard.png) | Reverse proxy routing and middleware. |
+| [Immich OIDC](assets/screenshots/immich-oidc.png) | App-native OIDC for mobile/API-safe SSO. |
+| [midPoint Users](assets/screenshots/midpoint-users.png) | IGA demo users and lifecycle states. |
+| [midPoint Role Catalog](assets/screenshots/midpoint-role-catalog.png) | Business role catalog. |
+| [midPoint Access Review](assets/screenshots/midpoint-access-review.png) | Access review and SoD evidence. |
+| [Authentik Lab Provisioning Users](assets/screenshots/authentik-lab-provisioning-users.png) | Dummy users provisioned into Authentik. |
+| [Authentik Lab Provisioning Groups](assets/screenshots/authentik-lab-provisioning-groups.png) | Lab-only Authentik groups. |
+| [Wiki.js IGA Provisioning Runbook](assets/screenshots/wikijs-iga-provisioning-runbook.png) | Finished IGA provisioning runbook. |
+| [Wiki.js IGA Report](assets/screenshots/wikijs-iga-report.png) | Executive-friendly IGA report. |
 
 ## Key Design Choices
 
