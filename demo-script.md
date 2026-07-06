@@ -37,9 +37,8 @@ lab services, and on-demand power controls.
 
 Screenshot:
 
-```text
-docs/assets/screenshots/homepage-dashboard.png
-```
+![homepage dashboard](assets/screenshots/homepage-dashboard.png)
+
 
 Proves:
 
@@ -65,9 +64,8 @@ clients and webhooks.
 
 Screenshot:
 
-```text
-docs/assets/screenshots/authentik-apps.png
-```
+![authentik apps](assets/screenshots/authentik-apps.png)
+
 
 Proves:
 
@@ -99,10 +97,10 @@ system state.
 
 Screenshot:
 
-```text
-docs/assets/screenshots/openwebui-operator.png
-docs/assets/screenshots/openwebui-tool-call.png
-```
+![openwebui operator](assets/screenshots/openwebui-operator.png)
+
+![openwebui tool call](assets/screenshots/openwebui-tool-call.png)
+
 
 Proves:
 
@@ -128,9 +126,8 @@ behavior. Dozzle gives log visibility without exposing public ports.
 
 Screenshot:
 
-```text
-docs/assets/screenshots/uptime-kuma-status.png
-```
+![uptime kuma status](assets/screenshots/uptime-kuma-status.png)
+
 
 Proves:
 
@@ -155,9 +152,8 @@ Git and pulled into the wiki for easier browsing.
 
 Screenshot:
 
-```text
-docs/assets/screenshots/wikijs-runbooks.png
-```
+![wikijs runbooks](assets/screenshots/wikijs-runbooks.png)
+
 
 Proves:
 
@@ -183,11 +179,12 @@ review evidence.
 
 Screenshots:
 
-```text
-docs/assets/screenshots/midpoint-users.png
-docs/assets/screenshots/midpoint-role-catalog.png
-docs/assets/screenshots/midpoint-access-review.png
-```
+![midpoint users](assets/screenshots/midpoint-users.png)
+
+![midpoint role catalog](assets/screenshots/midpoint-role-catalog.png)
+
+![midpoint access review](assets/screenshots/midpoint-access-review.png)
+
 
 Proves:
 
@@ -221,10 +218,10 @@ restrictions, and no user deletion.
 
 Screenshots:
 
-```text
-docs/assets/screenshots/authentik-lab-provisioning-users.png
-docs/assets/screenshots/authentik-lab-provisioning-groups.png
-```
+![authentik lab provisioning users](assets/screenshots/authentik-lab-provisioning-users.png)
+
+![authentik lab provisioning groups](assets/screenshots/authentik-lab-provisioning-groups.png)
+
 
 Proves:
 
@@ -250,10 +247,10 @@ results, and provisioning actions.
 
 Screenshots:
 
-```text
-docs/assets/screenshots/wikijs-iga-provisioning-runbook.png
-docs/assets/screenshots/wikijs-iga-report.png
-```
+![wikijs iga provisioning runbook](assets/screenshots/wikijs-iga-provisioning-runbook.png)
+
+![wikijs iga report](assets/screenshots/wikijs-iga-report.png)
+
 
 Proves:
 
