@@ -1,9 +1,8 @@
-# Homelab Portfolio Demo Script
+# Homelab Project Walkthrough
 
-This script is a short presentation path for the private AI homelab. It is
-designed for a recruiter screen, portfolio walkthrough, or interview follow-up.
+This walkthrough highlights the architecture, operating model, and governance simulation behind the private AI homelab.
 
-## One-Minute Pitch
+## Overview
 
 I built a private production-style homelab on an Apple Silicon Mac Mini using
 Docker Desktop, Tailscale, Traefik, Authentik, AdGuard DNS, Wiki.js, Open WebUI,
@@ -18,7 +17,7 @@ The newest part is an IGA simulation: midPoint models users, roles,
 joiner/mover/leaver states, access review evidence, and a guarded connector
 provisions dummy lab users/groups into Authentik.
 
-## Demo Flow
+## Walkthrough
 
 ### 1. Private Entry Point
 
@@ -28,7 +27,7 @@ Open:
 https://homepage.home.arpa:8443
 ```
 
-Say:
+Notes:
 
 ```text
 This is the private launchpad. It is reachable only from my tailnet through
@@ -36,7 +35,7 @@ home.arpa DNS. The page organizes infrastructure, applications, monitoring,
 lab services, and on-demand power controls.
 ```
 
-Screenshot proof:
+Screenshot:
 
 ```text
 docs/assets/screenshots/homepage-dashboard.png
@@ -56,7 +55,7 @@ Open:
 https://auth.home.arpa:8443
 ```
 
-Say:
+Notes:
 
 ```text
 Authentik is the central identity layer. Browser/admin apps use forward-auth,
@@ -64,7 +63,7 @@ while API-heavy or mobile-heavy apps use app-native OIDC to avoid breaking
 clients and webhooks.
 ```
 
-Screenshot proof:
+Screenshot:
 
 ```text
 docs/assets/screenshots/authentik-apps.png
@@ -90,7 +89,7 @@ Ask:
 Use docker_summary and tell me which containers need attention.
 ```
 
-Say:
+Notes:
 
 ```text
 Open WebUI is not just chat. It has runbook knowledge and an internal OpenAPI
@@ -98,7 +97,7 @@ tool server. The assistant can answer operational questions from live read-only
 system state.
 ```
 
-Screenshot proof:
+Screenshot:
 
 ```text
 docs/assets/screenshots/openwebui-operator.png
@@ -120,14 +119,14 @@ https://uptime.home.arpa:8443
 https://dozzle.home.arpa:8443
 ```
 
-Say:
+Notes:
 
 ```text
 Uptime Kuma tracks service availability and expected Authentik redirect
 behavior. Dozzle gives log visibility without exposing public ports.
 ```
 
-Screenshot proof:
+Screenshot:
 
 ```text
 docs/assets/screenshots/uptime-kuma-status.png
@@ -147,14 +146,14 @@ Open:
 https://wiki.home.arpa:8443
 ```
 
-Say:
+Notes:
 
 ```text
 Wiki.js is the operator-facing documentation layer. Runbooks are versioned in
 Git and pulled into the wiki for easier browsing.
 ```
 
-Screenshot proof:
+Screenshot:
 
 ```text
 docs/assets/screenshots/wikijs-runbooks.png
@@ -174,7 +173,7 @@ Open:
 https://midpoint.home.arpa:8443/midpoint
 ```
 
-Say:
+Notes:
 
 ```text
 midPoint runs as an on-demand IGA lab. It models HR-driven users, business
@@ -212,7 +211,7 @@ Directory -> Users
 Directory -> Groups
 ```
 
-Say:
+Notes:
 
 ```text
 The guarded connector turns desired IGA state into Authentik lab users and
@@ -241,7 +240,7 @@ Open:
 https://wiki.home.arpa:8443/runbooks/iga-lab-report
 ```
 
-Say:
+Notes:
 
 ```text
 The report generator creates executive-friendly evidence from desired state and
@@ -262,9 +261,9 @@ Proves:
 - evidence generation
 - readable governance reporting
 
-## Screenshot Map
+## Evidence Map
 
-| Screenshot | What To Say |
+| Screenshot | What It Shows |
 |---|---|
 | `homepage-dashboard.png` | Private service launchpad with organized app groups. |
 | `authentik-apps.png` | Centralized SSO and app access policy. |
@@ -282,7 +281,7 @@ Proves:
 | `wikijs-iga-provisioning-runbook.png` | Finished IGA provisioning runbook. |
 | `wikijs-iga-report.png` | Executive-friendly IGA report. |
 
-## Strongest Talking Points
+## Key Design Choices
 
 - Zero-public-ingress homelab with private DNS and tailnet access.
 - Layered auth model: Authentik forward-auth, app-native OIDC, and local
@@ -295,13 +294,13 @@ Proves:
 - Git-backed runbooks and screenshots that turn the build into presentable
   evidence, not just a pile of containers.
 
-## Questions To Be Ready For
+## Design Tradeoffs
 
-| Question | Short Answer |
+| Topic | Design Rationale |
 |---|---|
-| Why Tailscale instead of public ports? | It removes public ingress risk while keeping remote access simple. |
-| Why both forward-auth and OIDC? | Forward-auth is good for browser apps; OIDC is better for mobile/API-heavy apps. |
-| Why on-demand midPoint? | It is realistic for IGA demos but too heavy to keep running all the time on 16GB RAM. |
-| What prevents the provisioner from touching real users? | It only accepts `@home.arpa` emails and `lab-*` groups, refuses privileged-looking names, and never deletes users. |
-| What would you improve next? | Add approval workflow, backup execution on external SSD, and a production-grade connector pattern. |
+| Network access | It removes public ingress risk while keeping remote access simple. |
+| Authentication model | Forward-auth is good for browser apps; OIDC is better for mobile/API-heavy apps. |
+| Resource management | It is realistic for IGA demos but too heavy to keep running all the time on 16GB RAM. |
+| Provisioning scope | It only accepts `@home.arpa` emails and `lab-*` groups, refuses privileged-looking names, and never deletes users. |
+| Future expansion | Add approval workflow, backup execution on external SSD, and a production-grade connector pattern. |
 

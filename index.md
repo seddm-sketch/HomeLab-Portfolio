@@ -304,5 +304,5 @@ Engineering skills demonstrated:
 
 ## Explore More
 
-- [Demo Script](demo-script.md)
+- [Project Walkthrough](demo-script.md)
 
