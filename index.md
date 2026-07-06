@@ -159,7 +159,7 @@ Use backup_readiness and tell me what is missing before backups are safe to run.
 Use security_posture with max_issues=8. Summarize the top findings by severity.
 ```
 
-## Screenshots To Capture
+## Screenshot Guide
 
 Use these screenshots for a portfolio, README, or presentation. Keep sanitized
 copies under `docs/assets/screenshots/`.
@@ -182,8 +182,7 @@ copies under `docs/assets/screenshots/`.
 | `wikijs-iga-provisioning-runbook.png` | Finished provisioning runbook in Wiki.js |
 | `wikijs-iga-report.png` | Executive-friendly IGA provisioning report |
 
-Do not publish screenshots containing tokens, private emails, secret values, or
-full internal logs.
+Screenshots are sanitized for public sharing.
 
 ## Screenshots
 
@@ -247,7 +246,7 @@ full internal logs.
 
 ![Wiki.js IGA report](assets/screenshots/wikijs-iga-report.png)
 
-## Recruiter-Facing Highlights
+## Project Highlights
 
 - Designed and deployed a production-style private platform on Apple Silicon
   using Docker Desktop, Tailscale, Traefik, Authentik, and AdGuard DNS.
@@ -292,7 +291,7 @@ Engineering skills demonstrated:
 - Documentation and runbook design
 - Risk assessment and exception tracking
 
-## Current Known Gaps
+## Roadmap
 
 - Restic backup repository is intentionally parked until the external SSD is
   connected and configured.
@@ -303,11 +302,7 @@ Engineering skills demonstrated:
 - Old Taskcafe containers are visible as drift and should be cleaned up or
   documented.
 
-See:
+## Explore More
 
-- [Portfolio Demo Script](portfolio-demo-script.md)
-- [Security Exceptions Register](security-exceptions-register.md)
-- [Operations Manual](OPERATIONS_MANUAL.md)
-- [Open WebUI Runbook](runbooks/openwebui.md)
-- [Access Matrix](runbooks/access-matrix.md)
+- [Demo Script](demo-script.md)
 
